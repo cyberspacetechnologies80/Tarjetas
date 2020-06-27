@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/efectos.js"></script>
+    <title>Carlos Nazareth Gomez Perez EVN-303</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tarjetas personalizadas</h1>
+    </header>
+
+    
+        <h1>Crea tarjetas de presentacion personalizadas</h1>
+    
+    <section>
+
+        <article id="tema" class="contenedor">
+            <h3>Elige una tematica</h3>
+            <label><input type="radio" name="opcion" value="s" >San valentin</label>
+            <label><input type="radio" name="opcion" value="f" >Feliz cumpleaños</label>
+            <label><input type="radio" name="opcion" value="m" >Motivacion</label>
+        </article>
+
+        <article id="Imagen" class="contenedor">
+            <h3>Elige una imagen</h3>
+                <div class="amor">
+                    <img src="../img/val.png" alt="">
+                    <label><input type="radio" name="i" value="a" >San valentin</label>
+                </div>
+
+                <div class="cumpleanos">
+                    <img src="../img/cumpleanos.png" alt="" >
+                    <label><input type="radio" name="i" value="b" >Feliz cumpleaños</label>
+                </div>
+
+                <div class="moti">
+                    <img src="../img/moti.svg" alt="">
+                    <label><input type="radio" name="i" value="c" >Motivacion</label>
+                </div>         
+           
+        </article>
+
+        <article id="mensaje" class="contenedor">
+            <h3>Añade texto</h3>
+            <div class="todo">
+                <div class="mensajec">
+                    <input type="text" id="titu" placeholder="Capture un Titulo">
+                    <input type="text" id="sub" placeholder="Capture un Subtitulo">
+                    <input type="text" id="nom" placeholder="Capture el nombre de la persona">
+                </div>
+
+                <div class="mensajel">
+                    <input type="text" id="men" placeholder="Capture el cuerpo del mensaje">
+                </div> 
+                
+            </div>
+        </article>
+
+        <article  class="contenedor"> 
+            <h3>Color</h3>
+            <center><input id="color" type="color"></center>
+
+
+
+        <article class="gen">
+            <input type="button" value="Generar" onclick="generar()">
+        </article>
+
+        <article id="resultado">
+            <audio id="audio"src='' controls autoplay loop></audio>
+            <img src="" alt="" id="temple">
+            <h2 id="primero"></h2>
+            <h1 id="segundo"></h1>
+            <h3 id="tercero"></h3>
+            <p id="textolong"></p>
+            <img src="" alt="" id="imagen">
+            
+        </article>
+
+
+
+    </section>
+    
+</body>
+</html>
